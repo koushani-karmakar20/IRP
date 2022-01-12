@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head><h1>Assignment 1</h1></head>
+    <body>
+        <script>
+            function compute(name)
+            {var today=new Date();
+            var date=today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+            var time=today.getHours()+':'+today.getMinutes();
+            var datetime=date+'  '+time;
+            document.write(name+"  Unique id: "+Date.now()+" Date and time: "+datetime);
+                
+            }
+        </script>
+        <form>
+            Enter Name:&nbsp;<input type="text" id="fullname"><br><br>
+            <button onclick="compute(document.getElementById('fullname').value)">Click me!</button>
+        </form>
+        
+    </body>
+</html>
