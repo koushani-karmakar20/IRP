@@ -8,7 +8,9 @@
             var date=today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
             var time=today.getHours()+':'+today.getMinutes();
             var datetime=date+'  '+time;
-            document.write(name+"  Unique id: "+Date.now()+" Date and time: "+datetime);
+            document.write(name+"  Unique id: "+Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1)+" Date and time: "+datetime);
                 
             }
         </script>
