@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>How to make vertical
+        scrollable in a bootstrap row?</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .vertical-scrollable>.row {
+            position: absolute;
+            top: 120px;
+            bottom: 120px;
+            left: 180px;
+            width: 50%;
+            overflow-y: scroll;
+        }
+
+        .col-sm-8 {
+            color: white;
+            font-size:medium;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .col-sm-8:nth-child(2n+1) {
+            background: rgb(111, 196, 235);
+        }
+
+        .col-sm-8:nth-child(2n+2) {
+            background: rgb(126, 127, 131);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            
+            <h1 style="text-align:center;color:green;">
+                Scrollable List
+            </h1>
+           
+            <div class="container vertical-scrollable">
+                <button style="position: absolute; bottom: 80px;" id="buttonToTop"><i class="material-icons">arrow_upward</i></button>
+                <div class="row text-center" id="scrl_top" style="scroll-behavior: smooth;">
+                    <div class="col-sm-8 scrl">
+                        <p>
+                            Item:Book<br>
+                            owner:mimi<br>
+                            booked until:8/7/22
+                        </p></div>
+                        <div class="col-sm-8 scrl">
+                            <p>
+                                Item:Book<br>
+                                owner:mona<br>
+                                booked until:9/7/22
+                            </p></div>
+                            <div class="col-sm-8 scrl">
+                                <p>
+                                    Item:Shirt<br>
+                                    owner:mimi<br>
+                                    booked until:8/10/22
+                                </p></div>
+                                <div class="col-sm-8 scrl">
+                                    <p>
+                                        Item:Book<br>
+                                        owner:rimi<br>
+                                        booked until:8/12/22
+                                    </p></div>
+                                    <div class="col-sm-8 scrl">
+                                        <p>
+                                            Item:Jeans<br>
+                                            owner:mayukh<br>
+                                            booked until:18/7/22
+                                        </p></div>
+                                        <div class="col-sm-8 scrl">
+                                            <p>
+                                                Item:Food<br>
+                                                owner:Tina<br>
+                                                booked until:18/7/22
+                                            </p></div>
+                                            <div class="col-sm-8 scrl">
+                                                <p>
+                                                    Item:Shirt<br>
+                                                    owner:Reshmi<br>
+                                                    booked until:11/7/22
+                                                </p></div>
+                                                <div class="col-sm-8 scrl">
+                                                    <p>
+                                                        Item:Hair Gel<br>
+                                                        owner:Ranhul<br>
+                                                        booked until:8/6/22
+                                                    </p></div>
+                                                    <div class="col-sm-8 scrl">
+                                                        <p>
+                                                            Item:Rack<br>
+                                                            owner:Koushani<br>
+                                                            booked until:12/7/22
+                                                        </p></div>
+                                                        <div class="col-sm-8 scrl">
+                                                            <p>
+                                                                Item:Book<br>
+                                                                owner:Koushiki<br>
+                                                                booked until:1/7/22
+                                                            </p></div>
+                                                            <div class="col-sm-8 scrl">
+                                                                <p>
+                                                                    Item :Gown<br>
+                                                                    owner:mimi<br>
+                                                                    booked until:8/7/22
+                                                                </p></div>
+                                                                <div class="col-sm-8 scrl">
+                                                                    <p>
+                                                                        Item:Copy<br>
+                                                                        owner:mimi<br>
+                                                                        booked until:15/7/22
+                                                                    </p></div>
+                                                                    <div class="col-sm-8 scrl">
+                                                                        <p>
+                                                                            Item:Car<br>
+                                                                            owner:monalisa<br>
+                                                                            booked until:19/7/22
+                                                                        </p></div>
+                                                                        <div class="col-sm-8 scrl">
+                                                                            <p>
+                                                                                Item:Bus<br>
+                                                                                owner:ranu<br>
+                                                                                booked until:2/7/22
+                                                                            </p></div>
+                                                                            <div class="col-sm-8 scrl">
+                                                                                <p>
+                                                                                    Item:Car<br>
+                                                                                    owner:Rahul<br>
+                                                                                    booked until:8/4/22
+                                                                                </p></div>
+                                                                                <div class="col-sm-8 scrl">
+                                                                                    <p>
+                                                                                        Item:Hall<br>
+                                                                                        owner:mimi<br>
+                                                                                        booked until:11/7/22
+                                                                                    </p></div>
+                                                                                    <div class="col-sm-8 scrl">
+                                                                                        <p>
+                                                                                            Item:abc<br>
+                                                                                            owner:mimi<br>
+                                                                                            booked until:14/7/22
+                                                                                        </p></div>
+                                                                                        <div class="col-sm-8 scrl">
+                                                                                            <p>
+                                                                                                Item:bcd<br>
+                                                                                                owner:mimi<br>
+                                                                                                booked until:19/7/22
+                                                                                            </p></div>
+                                                                                            <div class="col-sm-8 scrl">
+                                                                                                <p>
+                                                                                                    Item:avgaush<br>
+                                                                                                    owner:rohan<br>
+                                                                                                    booked until:8/7/22
+                                                                                                </p></div>
+                                                                                                <div class="col-sm-8 scrl">
+                                                                                                    <p>
+                                                                                                        Item:pqrst<br>
+                                                                                                        owner:rahul<br>
+                                                                                                        booked until:18/7/22
+                                                                                                    </p></div>
+                                                                                                    <div class="col-sm-8 scrl">
+                                                                                                        <p>
+                                                                                                            Item:uyrt<br>
+                                                                                                            owner:mimi<br>
+                                                                                                            booked until:8/7/22
+                                                                                                        </p></div>
+                                                                                                        <div class="col-sm-8 scrl">
+                                                                                                            <p>
+                                                                                                                Item:ejfui<br>
+                                                                                                                owner:mimi<br>
+                                                                                                                booked until:8/7/22
+                                                                                                            </p></div>
+                                                                                                            <div class="col-sm-8 scrl">
+                                                                                                                <p>
+                                                                                                                    Item:eofhue<br>
+                                                                                                                    owner:mimi<br>
+                                                                                                                    booked until:8/7/22
+                                                                                                                </p></div>
+                                                                                                                <div class="col-sm-8 scrl">
+                                                                                                                    <p>
+                                                                                                                        Item:eihyue<br>
+                                                                                                                        owner:mimi<br>
+                                                                                                                        booked until:8/7/22
+                                                                                                                    </p></div>
+                                                                                                                    <div class="col-sm-8 scrl">
+                                                                                                                        <p>
+                                                                                                                            Item:efhyue<br>
+                                                                                                                            owner:mimi<br>
+                                                                                                                            booked until:8/7/22
+                                                                                                                        </p></div>
+                                                                                                                        <div class="col-sm-8 scrl">
+                                                                                                                            <p>
+                                                                                                                                Item:fiwuehfu<br>
+                                                                                                                                owner:mimi<br>
+                                                                                                                                booked until:8/7/22
+                                                                                                                            </p></div>
+                                                                                                                            <div class="col-sm-8 scrl">
+                                                                                                                                <p>
+                                                                                                                                    Item:efhef<br>
+                                                                                                                                    owner:mimi<br>
+                                                                                                                                    booked until:8/7/22
+                                                                                                                                </p></div>
+                                                                                                                                <div class="col-sm-8 scrl">
+                                                                                                                                    <p>
+                                                                                                                                        Item:efhue<br>
+                                                                                                                                        owner:mimi<br>
+                                                                                                                                        booked until:8/7/22
+                                                                                                                                    </p></div>
+                                                                                                                                    <div class="col-sm-8 scrl">
+                                                                                                                                        <p>
+                                                                                                                                            Item:efjei<br>
+                                                                                                                                            owner:mimi<br>
+                                                                                                                                            booked until:8/7/22
+                                                                                                                                        </p></div>
+                                                                                                                                        <div class="col-sm-8 scrl">
+                                                                                                                                            <p>
+                                                                                                                                                Item:efikef<br>
+                                                                                                                                                owner:mimi<br>
+                                                                                                                                                booked until:8/7/22
+                                                                                                                                            </p></div>
+                        
+                </div>
+            </div>
+        </div>
+    </center>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
